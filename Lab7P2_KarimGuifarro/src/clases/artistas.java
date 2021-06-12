@@ -7,16 +7,18 @@ import java.util.ArrayList;
 public class artistas {
 private String nombre;
 private String genero;
-private String diquera;
+private String disquera;
 private String alias;
 ArrayList <album> albumes = new ArrayList();
 
-    public artistas(String nombre, String genero, String diquera, String alias, ArrayList albumes) {
+    public artistas() {
+    }
+
+    public artistas(String nombre, String genero, String disquera, String alias) {
         this.nombre = nombre;
         this.genero = genero;
-        this.diquera = diquera;
+        this.disquera = disquera;
         this.alias = alias;
-        this.albumes = albumes;
     }
 
     public String getNombre() {
@@ -35,12 +37,12 @@ ArrayList <album> albumes = new ArrayList();
         this.genero = genero;
     }
 
-    public String getDiquera() {
-        return diquera;
+    public String getDisquera() {
+        return disquera;
     }
 
-    public void setDiquera(String diquera) {
-        this.diquera = diquera;
+    public void setDisquera(String disquera) {
+        this.disquera = disquera;
     }
 
     public String getAlias() {
@@ -61,7 +63,7 @@ ArrayList <album> albumes = new ArrayList();
 
     @Override
     public String toString() {
-        return "artistas{" + "nombre=" + nombre + ", genero=" + genero + ", diquera=" + diquera + ", alias=" + alias + ", albumes=" + albumes + '}';
+        return "artistas{" + "nombre=" + nombre + ", genero=" + genero + ", diquera=" + disquera + ", alias=" + alias + "," + '}';
     }
     
 

@@ -19,11 +19,15 @@ public class adminart {
          archivo = new File(path);
     }
 
+    /**
+     *
+     * @return
+     */
     public ArrayList<artistas> getListart() {
         return listart;
     }
 
-    public void setListaart(ArrayList<artistas> listart) {
+    public void setListart(ArrayList<artistas> listart) {
         this.listart = listart;
     }
 

@@ -20,13 +20,12 @@ public class album {
     private String alias_prod;
     private ArrayList <canciones> cancion =new ArrayList();
 
-    public album(String nombre, String publicacion, String genero, String formato_publi, String alias_prod, ArrayList cancion) {
+    public album(String nombre, String publicacion, String genero, String formato_publi, String alias_prod) {
         this.nombre = nombre;
         this.publicacion = publicacion;
         this.genero = genero;
         this.formato_publi = formato_publi;
         this.alias_prod = alias_prod;
-        this.cancion = cancion;
     }
 
     public String getNombre() {
